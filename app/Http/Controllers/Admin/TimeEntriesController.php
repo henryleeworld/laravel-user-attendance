@@ -83,7 +83,7 @@ class TimeEntriesController extends Controller
             ]);
 
             return response()->json([
-                'status' => 'Work time has stopped at [' . gmdate("H:i:s", $timeEntry->total_time) . '] hours'
+                'status' => '上班時間結束於 [' . gmdate("H:i:s", $timeEntry->total_time) . '] 小時'
             ]);
         } else {
             auth()->user()->timeEntries()->create([
@@ -91,7 +91,7 @@ class TimeEntriesController extends Controller
             ]);
 
             return response()->json([
-                'status' => 'Work time has started'
+                'status' => '上班時間開始'
             ]);
         };
     }

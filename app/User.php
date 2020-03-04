@@ -58,7 +58,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-
     public function getIsAdminAttribute()
     {
         return $this->roles()->where('id', 1)->exists();
