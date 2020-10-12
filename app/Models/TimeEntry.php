@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Traits\MultiTenantModelTrait;
 use Carbon\Carbon;
@@ -13,7 +13,8 @@ class TimeEntry extends Model
 
     public $table = 'time_entries';
 
-    protected $dates = [
+    protected $fillable = [
+        'user_id',
         'time_end',
         'time_start',
         'created_at',
@@ -21,8 +22,7 @@ class TimeEntry extends Model
         'deleted_at',
     ];
 
-    protected $fillable = [
-        'user_id',
+    protected $dates = [
         'time_end',
         'time_start',
         'created_at',

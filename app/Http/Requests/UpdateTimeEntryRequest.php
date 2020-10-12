@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\TimeEntry;
+use App\Models\TimeEntry;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTimeEntryRequest;
 use App\Http\Requests\UpdateTimeEntryRequest;
 use App\Http\Resources\Admin\TimeEntryResource;
-use App\TimeEntry;
+use App\Models\TimeEntry;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

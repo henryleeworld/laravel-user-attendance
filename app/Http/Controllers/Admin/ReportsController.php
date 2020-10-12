@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Services\ReportService;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use LaravelDaily\LaravelCharts\Classes\LaravelChart;
 
@@ -24,9 +24,10 @@ class ReportsController extends Controller
                 'chart_title'           => '每日工作時數（Days）',
                 'chart_type'            => 'line',
                 'report_type'           => 'group_by_date',
-                'model'                 => 'App\\TimeEntry',
+                'model'                 => 'App\\Models\\TimeEntry',
                 'group_by_field'        => 'time_start',
                 'group_by_period'       => 'day',
+                'group_by_field_format' => config('panel.date_format') . ' ' . config('panel.time_format'),
                 'aggregate_function'    => 'sum',
                 'aggregate_field'       => 'total_time_chart',
                 'column_class'          => 'col-md-8',

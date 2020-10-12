@@ -7,6 +7,13 @@ textarea {
     width: 100% !important;
 }
 
+table.dataTable tbody td.select-checkbox::before,
+table.dataTable tbody td.select-checkbox::after,
+table.dataTable tbody th.select-checkbox::before,
+table.dataTable tbody th.select-checkbox::after {
+    top: 50%;
+}
+
 .dataTables_length,
 .dataTables_filter,
 .dt-buttons {
@@ -114,4 +121,8 @@ table.dataTable thead .sorting_desc {
 
 .form-check.is-invalid ~ .invalid-feedback {
     display: block;
+}
+
+.c-sidebar-brand .c-sidebar-brand-full:hover {
+    color: inherit;
 }

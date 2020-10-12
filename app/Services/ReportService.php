@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\TimeEntry;
+use App\Models\TimeEntry;
 use Carbon\CarbonPeriod;
 
 class ReportService
