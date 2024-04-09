@@ -5,7 +5,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    儀表板
+                    {{ __('Dashboard') }}
                 </div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
                         </div>
                     @endif
 
-                    你已經登入！
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
@@ -24,5 +24,4 @@
 @endsection
 @section('scripts')
 @parent
-
 @endsection
